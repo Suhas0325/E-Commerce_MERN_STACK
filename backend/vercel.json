@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.js"
+      }
+    ],
+    "env": {
+      "MONGO_URI": "mongodb+srv://rajeshkumar:rajeshkumar123@cluster0.0ebqbcg.mongodb.net/ECommerce",
+      "RAZORPAY_KEY_ID": "rzp_test_4Kha1JOmsjJ22G",
+      "RAZORPAY_SECRET": "Qiu0TBV15dSzk305kDsqGDtz"
+    }
+  }
+  
